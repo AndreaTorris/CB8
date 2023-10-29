@@ -1,0 +1,46 @@
+712f26
+
+781f19
+
+8b8c7a
+
+fadadd
+
+
+TYPOGRAPHY
+
+h1: 48px
+
+h2: 40px
+
+h3: 36px
+
+h4: 28px
+
+h5: 24px
+
+h6: 22px
+
+display: 56px
+
+p: 18px;
+
+p-small: 16px;
+
+p-big: 24px;
+
+CONTAINER
+
+max-width: 1440px
+
+padding-left: 20px;
+
+padding-right: 20px;
+
+RESPONSIVE
+
+mobile < 768px
+
+tablet da 768px a 1024px
+
+desktop > 1024px
