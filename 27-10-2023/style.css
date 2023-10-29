@@ -1,0 +1,224 @@
+/* ***** COLORS *****/
+/* #712f26 */
+/* #781f19 */
+/* #8b8c7a */
+/* #fadadd */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.display {
+  font-size: 56px;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Oswald";
+}
+
+.contenitore {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Fine Inizializzazione- inizio Header */
+.mainheader {
+  position: fixed;
+  width: 100%;
+  background-color: #712f26;
+}
+
+.logo {
+  background-color: #fadadd;
+  background-clip: border-box;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerwrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigazionemenu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+  flex-flow: column wrap;
+  padding: 5px;
+}
+
+.navigazionemenu a {
+  color: #fadadd;
+  transition: color 0.35s ease;
+}
+
+.navigazionemenu a:hover {
+  color: #8b8c7a;
+  text-decoration: none;
+}
+
+/* Fine Header- inizio Hero */
+.hero {
+  width: 100%; /* larghezza piena */
+  height: 100vh; /* altezza piena espressa in viewport height */
+  background-color: #712f26; /* colore di sfondo della sezione hero */
+}
+.herowrapper {
+  display: flex; /* flex per allineamento elementi */
+  align-items: center; /* allineamento verticale centrale */
+  justify-content: space-between; /* allineamento orizzontale con spazio centrale */
+  flex-wrap: wrap; /* andiamo "a capo" se gli elementi non entrano nello spazio */
+  height: 100%; /* altezza piena, prende il valore 100vh assegnato a .hero */
+  padding-top: 60px; /* spazio superiore, utile per mobile (azzeriamo il valore se necessario nelle media query) */
+}
+
+.herotext {
+  color: #fadadd; /* colore del testo della sezione hero */
+  width: 100%; /* larghezza piena per mobile, per altri dispositivi assegniamo valore nelle media query */
+}
+
+.herotext .display {
+  margin-bottom: 20px; /* distanza inferiore rispetto agli altri elementi */
+}
+
+.heroimage {
+  width: 100%; /* larghezza piena da mobile, per altri dispositivi assegniamo valore differente nelle media query */
+  display: flex; /* utile per allineare il contenuto immagine interno */
+  justify-content: center; /* allineamento centrale verticale immagine interna */
+  align-items: center; /* allineamento centrale orizzontale immagine interna */
+}
+
+.herodescription {
+  margin-bottom: 20px; /* distanza inferiore rispetto agli altri elementi */
+}
+
+.heroimage img {
+  width: 100%; /* dimensioni 100% dell'immagine */
+  height: auto; /* ci permette di rispettare le proporzioni dell'immagine */
+}
+
+@media only screen and (min-width: 768px) {
+  .herowrapper {
+    padding-top: 0; /*  azzeriamo padding superiore assegnato per mobile */
+  }
+  .herotext,
+  .heroimage {
+    width: 50%; /* larghezza al 50% per avere due colonne una di fianco all'altra per dispositivi non mobile */
+  }
+}
+
+.button {
+  display: inline-block; /* Ci permette di avere un elemento inline ed avere la gestione dei margin e padding*/
+  padding: 20px 40px; /* spazi interni top bottom 20px, right e left 40px */
+  border: 1px solid #fadadd; /* aggiungiamo il bordo al pulsante */
+  border-radius: 10px; /* aggiungiamo il bordo arrotondanto */
+  color: #fadadd; /* colore del testo */
+  background-color: #712f26; /* background del pulsante */
+  font-weight: bold; /* font grassetto per il testo */
+  transition: all 0.5s ease-in-out; /* transition per effetto cambio colore e background in hover */
+}
+
+.button:hover {
+  background-color: #fadadd;
+  color: #712f26;
+}
+
+.services {
+  width: 100%; /* larghezza piena sezione services  */
+}
+
+/* contenitore elemento due colonne dei services */
+.serviceswrapper {
+  width: 100%; /*  larghezza piena  */
+  display: flex; /* flex per organizzare e distribuire gli elementi interni */
+  align-items: center; /*  allineamento verticale degli elementi */
+  justify-content: space-between; /* allineamento  orizzontale posizionando gli elementi a sinistra e a destra */
+  flex-wrap: wrap; /* "a capo" se l'elemento non rientra nello spazio */
+}
+
+.servicestext {
+  width: 100%; /* larghezza piena del contenuto testuale per mobile, modifichiamo il valore per altri dispositivi nelle media query */
+  padding: 20px; /* spazio interno top, right, bottom e left di 20px */
+}
+
+.servicesimage {
+  width: 100%; /* larghezza piena del contenitore dell'immagine per mobile, modifichiamo il valore per altri dispositivi nelle media query */
+}
+
+.servicesimage img {
+  object-fit: cover; /* ci permette di adattare l'immagine all'interno spazio del contenitore */
+  width: 100%; /*  larghezza piena per l'immagine */
+  height: 100%; /*  altezza piena per l'immagine */
+}
+
+/* media query per responsive per dispositivi con larghezza minima di 768px, da tablet in poi */
+@media only screen and (min-width: 768px) {
+  .servicestext,
+  .servicesimage {
+    width: 50%; /* larghezza al 50% per le due colonne */
+  }
+
+  /* per gli elementi dispari invertiamo la direzione della riga per visualizzare gli elementi alternati di immagine e testo  */
+  .serviceswrapper:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.mainfooter {
+  width: 100%;
+  background-color: #712f26;
+  position: relative;
+  bottom: 0;
+}
+
+.services-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
