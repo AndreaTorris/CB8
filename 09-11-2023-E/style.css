@@ -1,0 +1,34 @@
+/* end reset */
+
+h1 {
+  font-size: 30px;
+  padding: 60px;
+}
+
+p {
+  padding: 60px;
+}
+
+button {
+  margin-left: 170px;
+}
+.Hero {
+  background-color: #00004f;
+  color: #f7f7f7;
+}
+
+.Hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.Hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+  position: relative;
+}
