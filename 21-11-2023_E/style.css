@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.imageAndText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 400px;
+}
+
+.img {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+}
