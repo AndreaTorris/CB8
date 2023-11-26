@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-size: 16px; /* dimensione font di default*/
+  font-family: "Lexend", sans-serif; /* assegnamo font family */
+  background-color: #cdf7eb;
+}
+
+.header {
+  width: 100%;
+  background-color: #cdf7eb;
+  height: 70px; /* altezza fissa dell'header */
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between; /* elementi posizionati lasciando lo spazio interno */
+  align-items: center;
+}
+
+.navbarmenu {
+  display: flex; /* assegniamo flex per allineare gli elementi interni in orizzontale */
+  flex-wrap: wrap; /* ci permette mandare "a capo" gli elementi che non entrano nello spazio assegnato */
+  list-style-type: none; /* azzeriamo lo stile di default degli elenchi puntati */
+  gap: 20px;
+}
+
+.logo {
+  height: 70px;
+  width: 200px;
+  margin-left: 50px;
+}
+
+.orderNow {
+  margin-right: 50px;
+  padding: 5px 15px;
+  display: inline-block; /* Ci permette di avere un elemento inline ed avere la gestione dei margin e padding*/
+  text-decoration: none; /* rimuoviamo la visualizzazione underline di default per i tipi link */
+  border: 1px solid #f7f7f7; /* aggiungiamo il bordo al pulsante */
+  border-radius: 10px; /* aggiungiamo il bordo arrotondanto */
+  color: black; /* colore del testo */
+  background-color: white; /* background del pulsante */
+  transition: all 0.5s ease-in-out; /* transition per effetto cambio colore e background in hover */
+}
+
+.orderNow:hover {
+  background-color: #cdf7eb;
+}
+
+.genericWrapper {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between; /* elementi posizionati lasciando lo spazio interno */
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1440px; /* assegna una larghezza massima espressa in px */
+  width: 100%; /* larghezza sempre al 100%, quando la dimensione del display è inferiore alla grandezza massima assegnata occuperà tutto lo spazio */
+  margin: 0 auto; /* centra l'elemento assegnato con larghezza massima */
+  padding-left: 20px; /* spazio interno left e right per distanziare gli elementi dai bordi del display */
+  padding-right: 20px;
+}
+
+.hero {
+  width: 100%;
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between; /* elementi posizionati lasciando lo spazio interno */
+  align-items: center;
+}
+
+.heroWrapper {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between; /* elementi posizionati lasciando lo spazio interno */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 600px;
+}
+.heroImage {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.breakBar-container {
+  width: 100%; /* larghezza sempre al 100%, quando la dimensione del display è inferiore alla grandezza massima assegnata occuperà tutto lo spazio */
+  margin: 0;
+  background-color: white;
+  height: 50px;
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.breakerParagraph {
+  background-color: white;
+  font-weight: bold;
+}
+
+.smallParImg {
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+}
+
+.smallParWrapper {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.smallElsWrapper {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  background-color: white;
+  width: 100%;
+}
+
+.footerMenu {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  list-style-type: none; /* azzeriamo lo stile di default degli elenchi puntati */
+  gap: 20px;
+  width: 80%;
+  font-weight: bold;
+}
+.footer {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footerMenu {
+  display: flex; /* assegniamo flex per allineare gli elementi interni */
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 20px;
+  list-style-type: none; /* azzeriamo lo stile di default degli elenchi puntati */
+  gap: 20px;
+  width: 80%;
+}
+
+.subList {
+  list-style-type: none;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: min-content;
+  border-radius: 10px;
+  gap: 10px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.cardImg {
+  border-radius: 10px;
+  width: 416px;
+  height: 100px;
+}
+
+.cardTitle {
+  padding-left: 10px;
+}
+
+.cardPar {
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.cardLink {
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 25px;
+  padding-bottom: 10px;
+}
+
+.formParagraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 25px;
+  margin: 50px;
+}
+
+.formItself {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.formText {
+  height: 200px;
+  width: 500px;
+  resize: none;
+  margin-left: 100px;
+}
+
+.smallForm {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+}
