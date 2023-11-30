@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.navbar {
+  margin: 20px 0 0 0;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.search {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  display: flex;
+  height: 34px;
+  justify-content: space-between;
+}
+
+.search img {
+  object-fit: cover;
+}
+
+.search input[type="text"] {
+  color: rgb(26, 26, 26);
+  padding-left: 8px;
+  width: 40%;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  margin-right: 400px;
+}
+
+.links-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.links-list li {
+  cursor: pointer;
+}
+
+.links-list select {
+  cursor: pointer;
+}
