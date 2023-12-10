@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
+
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.welcome {
+  font-size: small;
+  font-weight: bolder;
+  color: #f7f7f7;
+}
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcomeImg {
+  width: 30%;
+  height: auto;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+.header {
+  background-color: #57cac3;
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 0 50px;
+  color: rgba(8, 31, 36, 1);
+  padding-top: 5px;
+  color: #f7f7f7;
+}
+
+h2 {
+  font-size: 14px;
+  margin-left: 50px;
+  color: rgba(8, 31, 36, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hedvig Letters Serif", sans-serif;
+  font-size: 18px;
+}
+
+.notCompleted {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  width: 100%vw;
+  height: 40vh;
+  overflow-y: scroll;
+  margin: 0px;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+.Completed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%vw;
+  height: 40vh;
+  overflow-y: scroll;
+  margin: 0px;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(8, 31, 36, 1);
+  gap: 5px;
+  padding: 10px;
+  font-size: 10px;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.notCompleted {
+  background-color: rgba(205, 247, 235, 0.5);
+}
+
+.Completed {
+  background-color: rgba(205, 247, 235, 0.5);
+}
+
+.list {
+  background-color: white;
+  color: rgba(8, 31, 36, 1);
+}
+
+button {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #f7f7f7;
+  background-color: #5860ca;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #57cac3;
+  padding: 15px 0px;
+  gap: 20px;
+}
+
+.list:hover {
+  background-color: #58ca8a;
+  color: aliceblue;
+  transition-duration: 0.2s;
+  box-shadow: 0 1px 3px black;
+}
+
+button:hover {
+  box-shadow: 5px 5px 0 rgb(18, 69, 180);
+}
