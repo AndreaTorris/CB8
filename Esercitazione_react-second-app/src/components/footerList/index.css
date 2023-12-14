@@ -1,0 +1,9 @@
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+  font-size: 10px;
+
+  list-style-type: none;
+}
