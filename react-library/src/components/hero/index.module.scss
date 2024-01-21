@@ -1,0 +1,23 @@
+.Hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #00a3a3;
+  border-top: 2px solid #005555;
+  border-bottom: 2px solid #005555;
+}
+
+.Image {
+  width: 400px;
+  height: 600;
+  border-left: 2px solid #005555;
+}
+
+.SectionText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: antiquewhite;
+}
