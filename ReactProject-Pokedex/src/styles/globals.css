@@ -1,0 +1,44 @@
+:root {
+  --primary-red: #e3350d;
+  --secondary-yellow: #f5d030;
+  --accent-blue: #3a75c4;
+  --background-green: #6cb545;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  background-color: #f5d030;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #ed6562;
+  border-radius: 8px;
+  background-color: #f5d030;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #ed6562;
+  color: #fff;
+}

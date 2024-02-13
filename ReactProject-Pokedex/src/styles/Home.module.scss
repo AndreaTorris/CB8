@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Press+Start+2P&display=swap");
+
+.Body {
+  font-size: 18px;
+  font-family: "Press Start 2P", sans-serif;
+  margin: 10px 0px;
+}
+
+.HomepageNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  background-color: #f5d030;
+  font-size: 18px;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.SinglePokemonPage {
+  height: 100vh;
+  background-color: #6cb545;
+  font-size: 18px;
+  font-family: "Press Start 2P", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SinglePokemonCard {
+  font-size: 18px;
+  font-family: "Press Start 2P", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 300px;
+  height: 450px;
+  padding: 12px;
+  border: 2px solid #f5d030;
+  background-color: #c2dcfe;
+  gap: 5px 0;
+  h3 {
+    font-size: 12px;
+  }
+
+  border-radius: 14px;
+  font-size: 0.8rem;
+
+  .image {
+    width: 100px;
+    height: 160px;
+  }
+  .title {
+    padding: 10px 0px;
+  }
+  .types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 5px 0;
+  }
+
+  .subtext {
+    padding: 0 2px;
+  }
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 2px 0;
+  }
+}
+
+.nameSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
