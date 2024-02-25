@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>inserisci i tuoi dati</h1>
+    <form action="/showData" method="POST">
+      <label>nome</label>
+      <input type="text" name="nome" />
+      <label>cognome</label>
+      <input type="text" name="cognome" />
+      <label>Scegli il animale preferito</label>
+      <select name="animale">
+        <option>coniglio</option>
+        <option>anatra</option>
+        <option>cavallo</option>
+      </select>
+      <button type="submit">Invia</button>
+    </form>
+  </body>
+</html>
